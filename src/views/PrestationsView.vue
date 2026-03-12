@@ -1,6 +1,6 @@
 <script setup>
 import { useReveal } from '@/composables/useReveal'
-import { services } from '@/data/siteData'
+import { services, images } from '@/data/siteData'
 import SectionHeader from '@/components/SectionHeader.vue'
 import CtaSection from '@/components/CtaSection.vue'
 
@@ -34,16 +34,10 @@ useReveal()
   >
     <div class="max-w-[1200px] mx-auto px-6">
       <div class="grid lg:grid-cols-2 gap-14 items-center" :class="{ 'lg:[direction:rtl]': i % 2 !== 0 }">
-        <!-- Image placeholder -->
+        <!-- Image -->
         <div class="reveal" :class="{ 'lg:[direction:ltr]': i % 2 !== 0 }">
-          <div class="rounded-2xl overflow-hidden shadow-md aspect-[4/3]" style="background: linear-gradient(135deg, var(--color-primary-light), var(--color-surface-warm));">
-            <div class="w-full h-full flex flex-col items-center justify-center gap-3 text-[var(--color-primary-muted)] text-sm font-medium">
-              <svg class="w-12 h-12 opacity-50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M3 9.5L7.5 14 12 9.5 16.5 14 21 9.5V19a2 2 0 01-2 2H5a2 2 0 01-2-2V9.5z"/>
-                <circle cx="8.5" cy="6.5" r="2.5"/>
-              </svg>
-              Photo : nettoyage {{ service.title.toLowerCase() }}
-            </div>
+          <div class="rounded-2xl overflow-hidden shadow-md aspect-[4/3]">
+            <img :src="images[service.id]" :alt="'Nettoyage professionnel ' + service.title.toLowerCase() + ' — Magic\'Oz'" class="w-full h-full object-cover" loading="lazy" />
           </div>
         </div>
 

@@ -41,7 +41,7 @@ useReveal()
               </a>
               <div class="flex items-start gap-3 text-[var(--color-text-secondary)]">
                 <svg class="w-5 h-5 mt-0.5 text-[var(--color-primary)] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                <span class="text-base">{{ company.address.street }}<br>{{ company.address.zip }} {{ company.address.city }} ({{ company.address.region }})</span>
+                <span class="text-base">Intervention à domicile — {{ company.city }} ({{ company.region }})</span>
               </div>
               <div class="flex items-start gap-3 text-[var(--color-text-secondary)]">
                 <svg class="w-5 h-5 mt-0.5 text-[var(--color-primary)] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v10l4.24 4.24"/><circle cx="12" cy="12" r="10"/></svg>

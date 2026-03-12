@@ -1,6 +1,6 @@
 <script setup>
 import { useReveal } from '@/composables/useReveal'
-import { company, services, results, zones } from '@/data/siteData'
+import { company, services, results, zones, images } from '@/data/siteData'
 import SectionHeader from '@/components/SectionHeader.vue'
 import CtaSection from '@/components/CtaSection.vue'
 
@@ -59,14 +59,8 @@ const trustItems = [
 
         <!-- Visual -->
         <div class="relative">
-          <div class="rounded-2xl overflow-hidden shadow-xl aspect-[4/3]" style="background: linear-gradient(135deg, var(--color-primary-light), var(--color-surface-warm));">
-            <div class="w-full h-full flex flex-col items-center justify-center gap-3 text-[var(--color-primary-muted)] text-sm font-medium">
-              <svg class="w-16 h-16 opacity-50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M3 9.5L7.5 14 12 9.5 16.5 14 21 9.5V19a2 2 0 01-2 2H5a2 2 0 01-2-2V9.5z"/>
-                <circle cx="8.5" cy="6.5" r="2.5"/>
-              </svg>
-              Photo : intervention Magic'Oz
-            </div>
+          <div class="rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
+            <img :src="images.hero" alt="Nettoyage professionnel de textiles Magic'Oz" class="w-full h-full object-cover" loading="eager" />
           </div>
           <!-- Floating cards -->
           <div class="absolute -top-5 -right-5 bg-white rounded-xl px-5 py-3 shadow-lg flex items-center gap-3 animate-float max-md:hidden">
@@ -155,6 +149,9 @@ const trustItems = [
           </div>
         </div>
         <div class="reveal reveal-delay-2">
+          <div class="rounded-2xl overflow-hidden shadow-md aspect-[4/3] mb-6">
+            <img :src="images.result" alt="Intérieur sain et propre après nettoyage Magic'Oz" class="w-full h-full object-cover" loading="lazy" />
+          </div>
           <div class="rounded-2xl p-10 relative overflow-hidden" style="background: linear-gradient(135deg, #FFF8F0, #FFF1E6); border: 1px solid rgba(212,168,67,0.2);">
             <div class="absolute top-0 right-0 w-[200px] h-[200px] pointer-events-none" style="background: radial-gradient(circle, rgba(212,168,67,0.1) 0%, transparent 70%);"></div>
             <div class="inline-flex items-center gap-2 bg-[var(--color-accent)]/15 text-[#9A7A28] px-4 py-1 rounded-full text-[0.8rem] font-semibold mb-5">

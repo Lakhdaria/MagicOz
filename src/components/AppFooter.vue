@@ -54,7 +54,7 @@ import { company } from '@/data/siteData'
             </div>
             <div class="flex items-start gap-2 text-sm">
               <svg class="w-4 h-4 mt-0.5 text-[var(--color-primary-muted)] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              <span>{{ company.address.street }}<br>{{ company.address.zip }} {{ company.address.city }} ({{ company.address.region }})</span>
+              <span>{{ company.city }} ({{ company.region }})</span>
             </div>
           </div>
         </div>

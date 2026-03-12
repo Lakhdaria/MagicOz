@@ -8,12 +8,8 @@ export const company = {
   phone: '07 49 89 54 56',
   phoneFull: '+33749895456',
   email: 'magicoz.cleaning.contact@gmail.com',
-  address: {
-    street: '3 rue Adalbert de Baerenfels',
-    city: 'Saint-Louis',
-    zip: '68300',
-    region: 'Haut-Rhin',
-  },
+  city: 'Saint-Louis',
+  region: 'Haut-Rhin',
   hours: 'Lundi au samedi, 8h – 20h',
   accroche: "Chez Magic'Oz, nous ne masquons pas les odeurs ni les taches. Grâce à nos machines professionnelles, nous éliminons à la source, en profondeur, jusque dans les fibres et la mousse.",
   ecoText: "Nous privilégions essentiellement des produits respectueux de l'environnement, des animaux et des enfants. Selon les situations, des solutions professionnelles adaptées peuvent être utilisées afin de garantir un résultat optimal.",
@@ -185,6 +181,18 @@ export const results = [
   'Textiles respectés et durée de vie prolongée',
   'Intérieur sain, sûr pour les enfants et les animaux',
 ]
+
+// Images libres de droits — Unsplash (licence gratuite commerciale)
+export const images = {
+  hero: 'https://images.pexels.com/photos/4401538/pexels-photo-4401538.jpeg?auto=compress&cs=tinysrgb&w=800',
+  canape: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&q=80',
+  fauteuil: 'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=700&q=80',
+  matelas: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80',
+  tapis: 'https://images.unsplash.com/photo-1600166898405-da9535204843?w=700&q=80',
+  method: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=700&q=80',
+  eco: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=700&q=80',
+  result: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=700&q=80',
+}
 
 export const bookingOptions = [
   { value: 'canape-2-3', label: 'Canapé 2 à 3 places — 89 €', price: 89 },

@@ -37,7 +37,7 @@ export function generateQuotePDF(formData, prestationLabel, price) {
   const rightX = pageWidth - margin
   doc.text(company.phone, rightX, 12, { align: 'right' })
   doc.text(company.email, rightX, 17, { align: 'right' })
-  doc.text(company.address.street + ', ' + company.address.zip + ' ' + company.address.city, rightX, 22, { align: 'right' })
+  doc.text(company.city + ' (' + company.region + ')', rightX, 22, { align: 'right' })
 
   let y = 44
 
